@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <button id="catalogue">Mostrar todo</button>
+        <select id="numberOrder">
+          <option value="minorToMayor">1-151</option>
+          <option value="mayorToMinor">151-1</option>
+        </select>
+        <select id="alphaOrder">
+          <option value="AtoZ">A-Z</option>
+          <option value="ZtoA">Z-A</option>
+        </select>
+        <select id="typeFilter"> 
+            <option value="Fire">Fuego</option> 
+            <option value="Ice">Hielo</option> 
+            <option value="Flying">Volador</option> 
+            <option value="Psychic">Psíquico</option> 
+            <option value="Water">Agua</option> 
+            <option value="Ground">Tierra</option> 
+            <option value="Rock">Roca</option> 
+            <option value="Grass">Planta</option> 
+            <option value="Fighting">Lucha</option> 
+            <option value="Poison">Veneno</option> 
+            <option value="Bug">Bicho</option> 
+            <option value="Electric">Electrico</option>
+            <option value="Ghost">Fantasma</option> 
+            <option value="Normal">Normal</option>
+            <option value="Dragon">Dragon</option> 
+          </select>
+          <select id="kmFilter">
+            <option value="2 km">2 km</option>
+            <option value="5 km">5 km</option>
+            <option value="10 km">10 km</option>
+          </select>
+          <button id="intento">esto es un intento</button>
+          <div id="hr">
+            <label><input type="checkbox" id="0" value="0">0 hr</label>
+            <label><input type="checkbox" id="1" value="1">1 hr</label>
+            <label><input type="checkbox" id="2" value="2">2 hr</label>
+            <label><input type="checkbox" id="3" value="3">3 hr</label>
+            <label><input type="checkbox" id="4" value="4">4 hr</label>
+            <label><input type="checkbox" id="5" value="5">5 hr</label>
+            <label><input type="checkbox" id="6" value="6">6 hr</label>
+            <label><input type="checkbox" id="7" value="7">7 hr</label>
+            <label><input type="checkbox" id="8" value="8">8 hr</label>
+            <label><input type="checkbox" id="9" value="9">9 hr</label>
+            <label><input type="checkbox" id="10" value="10">10 hr</label>
+            <label><input type="checkbox" id="11" value="11">11 hr</label>
+            <label><input type="checkbox" id="12" value="12">12 hr</label>
+            <label><input type="checkbox" id="13" value="13">13 hr</label>
+            <label><input type="checkbox" id="14" value="14">14 hr</label>
+            <label><input type="checkbox" id="15" value="15">15 hr</label>
+            <label><input type="checkbox" id="16" value="16">16 hr</label>
+            <label><input type="checkbox" id="17" value="17">17 hr</label>
+            <label><input type="checkbox" id="18" value="18">18 hr</label>
+            <label><input type="checkbox" id="19" value="19">19 hr</label>
+            <label><input type="checkbox" id="20" value="20">20 hr</label>
+            <label><input type="checkbox" id="21" value="21">21 hr</label>
+            <label><input type="checkbox" id="22" value="22">22 hr</label>
+            <label><input type="checkbox" id="23" value="23">23 hr</label>
+          </div>
+    </header>
+
+    <main>
+      <article>
+          <div id="root"></div>
+      </article>
+    </main>
+    
+
+
+    <script src="./data/pokemon/pokemon.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
