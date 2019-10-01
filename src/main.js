@@ -39,8 +39,8 @@ function infoPokemon(dataPokemon){
 
        //imprimo catálogo
        document.getElementById("root").appendChild(pokemonCard).innerHTML;
-   };
-};
+   }
+}
 
 //-----------------------------FUNCIÓN MOSTRAR-----------------------------
 //declaro botón catálogo mediante ID
@@ -125,15 +125,17 @@ const btnCalculo=document.getElementById("calculo");
 btnCalculo.addEventListener("click", ()=>{
 
     for (let j=0; j<dataPokemon.length; j++){ 
+        let spawTimeValue="";
+        let calculo="";
         spawTimeValue=parseInt(dataPokemon[j].spawn_time);
-        console.log(spawTimeValue);
+        //console.log(spawTimeValue);
         calculo=(spawTimeValue/24)*100;
 
         const muestraIntento=document.createElement("h1");
         muestraIntento.textContent=(calculo.toFixed(2));
 
         document.getElementById("root").appendChild(muestraIntento).innerHTML;
-    };  
+    }
 });
 
 //-----------------------------INTENTO CÁLCULO MÁS DIVER-----------------------------
@@ -148,18 +150,19 @@ checking.addEventListener("click",()=>{
     //creo array vacío
     let checkingCheckBox=[];
     //recorro checkbox
-    for(i=0; i<callingCheckBox.length;i++)
+    for(let i=0; i<callingCheckBox.length;i++)
     if (callingCheckBox[i].checked)
     //push
     checkingCheckBox.push(callingCheckBox[i].value);
     //si quiero todo en un solo array [(checkingCheckBox.join(","))]
-    console.log(checkingCheckBox.join(","))
+    //console.log(checkingCheckBox.join(","))
     //console.log(checkingCheckBox);
 
     for (let j=0; j<dataPokemon.length; j++){ 
+        let spawTimeValue="";
         spawTimeValue=[parseInt(dataPokemon[j].spawn_time)];
         console.log(spawTimeValue);
-    };
+    }
 
     // const prueba= checkingCheckBox.filter(function(spawTimeValue){
     //     return checkingCheckBox.includes(spawTimeValue)

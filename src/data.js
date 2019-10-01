@@ -14,7 +14,7 @@ window.dataFunction={
       numberOrderResult=dataPokemon.sort((a,b)=>{
         return b.id-a.id;
       })
-    };
+    }
     return numberOrderResult;
   },
 
@@ -31,7 +31,7 @@ window.dataFunction={
       alphaOrderResult=dataPokemon.sort((a,b)=>{
         return b.name.localeCompare(a.name)
       })
-    };
+    }
     return alphaOrderResult;
   },
 //-----------------------------FILTER()-----------------------------
