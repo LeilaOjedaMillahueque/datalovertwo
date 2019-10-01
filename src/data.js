@@ -1,8 +1,11 @@
 //asignamos nombre a la ventana data.js para volverla global
 window.dataFunction={
-  orderFunctionOne: (dataPokemon,numberOrder) =>{
+//-----------------------------SORT()-----------------------------
+  numOrderFunction: (dataPokemon,numberOrder) =>{
+    //Creo cadena vacía para luego imprimir el resultado
     let numberOrderResult="";
     if (numberOrder==="minorToMayor"){
+      //función sort ordena array convirtiendo valores en string
       numberOrderResult=dataPokemon.sort((a,b)=>{
         return a.id-b.id;
       })
@@ -15,10 +18,12 @@ window.dataFunction={
     return numberOrderResult;
   },
 
-  orderFunctionTwo: (dataPokemon,alphaOrder) =>{
+  nameOrderFunction: (dataPokemon,alphaOrder) =>{
+    //Creo cadena vacía para luego imprimir el resultado
     let alphaOrderResult="";
     if (alphaOrder==="AtoZ"){
       alphaOrderResult=dataPokemon.sort((a,b)=>{
+        //locallCompare permite orden lexicográfico
         return a.name.localeCompare(b.name);
       })
     }
@@ -29,9 +34,11 @@ window.dataFunction={
     };
     return alphaOrderResult;
   },
-
-  filterFunction: (dataPokemon,selectedType) =>{
+//-----------------------------FILTER()-----------------------------
+  typeFilterFunction: (dataPokemon,selectedType) =>{
+    //función filter obtiene un subconjunto de elementos del array, que cumpla con cierta condición
     const filterResult=dataPokemon.filter(element=>{
+      //includes determina si se incluye un determinado elemento
       return element.type.includes(selectedType);
     });
     return filterResult;
@@ -44,10 +51,12 @@ window.dataFunction={
     return kmFilterResult;
   },
 
-  //intentoCalcularFunction: (dataPokemon,hr) =>{
-    //const hrInput=dataPokemon.filter(element=>{
-      //return element.egg.includes(selectedTypeKm);
-    //});
-    //return kmFilterResult;
-  //},
+  // funciondeprueba:(checkingCheckBox, spawTimeValue)=>{
+  //   const estoesunaprueba=checkingCheckBox.filter(element=>{
+  //       return element.checkingCheckBox.includes(spawTimeValue);
+  //   });
+  //   return estoesunaprueba;
+  // },
+  
+
 };
